@@ -6,12 +6,23 @@ package com.myspace.masterproject;
 
 public class intObject implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public intObject() {
-    }
+	private java.math.BigInteger myInt;
 
+	public intObject() {
+	}
 
+	public java.math.BigInteger getMyInt() {
+		return this.myInt;
+	}
 
+	public void setMyInt(java.math.BigInteger myInt) {
+		this.myInt = myInt;
+	}
+
+	public intObject(java.math.BigInteger myInt) {
+		this.myInt = myInt;
+	}
 
 }
